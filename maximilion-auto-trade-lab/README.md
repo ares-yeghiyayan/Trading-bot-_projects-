@@ -51,3 +51,13 @@ Implemented risk checks include:
 - Gold vertical spike
 - USDJPY intervention zone
 - unknown symbol route
+
+## Run Commands
+
+```bash
+cd maximilion-auto-trade-lab
+pip install -e ".[dev]"
+pytest
+python -m maximilion_auto_trade_lab.cli validate-config
+python -m maximilion_auto_trade_lab.cli status
+```
