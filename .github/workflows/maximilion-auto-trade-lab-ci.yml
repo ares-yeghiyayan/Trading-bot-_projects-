@@ -1,0 +1,40 @@
+name: Maximilion Auto Trade Lab CI
+
+on:
+  pull_request:
+    paths:
+      - "maximilion-auto-trade-lab/**"
+      - ".github/workflows/maximilion-auto-trade-lab-ci.yml"
+  push:
+    branches:
+      - main
+      - codex/maximilion-auto-trade-lab-scaffold
+    paths:
+      - "maximilion-auto-trade-lab/**"
+      - ".github/workflows/maximilion-auto-trade-lab-ci.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: maximilion-auto-trade-lab
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e ".[dev]"
+
+      - name: Test
+        run: pytest
+
+      - name: Validate safe config
+        run: python -m maximilion_auto_trade_lab.cli validate-config
