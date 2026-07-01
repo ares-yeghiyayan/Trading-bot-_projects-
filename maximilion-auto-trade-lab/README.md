@@ -61,3 +61,12 @@ pytest
 python -m maximilion_auto_trade_lab.cli validate-config
 python -m maximilion_auto_trade_lab.cli status
 ```
+
+## Safety Confirmation
+
+- No broker sending code.
+- No MT5 order_send.
+- No live execution.
+- Paper preview only.
+- Risk engine blocks unsafe candidates.
+- Mock/research-only defaults remain intact.
