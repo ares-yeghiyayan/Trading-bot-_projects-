@@ -5,6 +5,7 @@ Private workbench-style storage for trading bot experiments and execution script
 ## Projects
 
 - [`gold-1-7-2026`](gold-1-7-2026/) — Jimi Gold one-cell executor for Jupyter Notebook + MetaTrader 5.
+- [`forex-pairs`](forex-pairs/) — Jimi Forex one-cell executor for selected forex pairs in Jupyter Notebook + MetaTrader 5.
 
 ## Safety Boundary
 
