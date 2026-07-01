@@ -1,6 +1,8 @@
 # Trading Bot Projects
 
-Private workbench-style storage for trading bot experiments and execution scripts.
+Public workbench-style storage for small trading automation experiments and execution-script prototypes.
+
+This repository is separate from Maximelion's founder proof surface. It is a technical sandbox, not the main identity layer.
 
 ## Projects
 
